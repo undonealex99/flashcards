@@ -37,8 +37,8 @@ export const useFlashCardStore = defineStore("flashCard", () => {
                 const entry = e as { definition: string; term: string; lesson: string };
                 return {
                     definition: String(entry.definition ?? ""),
-                    term: String(entry.term.split("\n")[0] ?? ""),
-                    kanji: String(entry.term.split("\n")[1] ?? ""),
+                    term: String(entry.term.split("/\r?\n/")[0] ?? ""),
+                    kanji: String(entry.term.split("/\r?\n/")[1] ?? ""),
                     lesson: String(entry.lesson ?? ""),
                 } as VocabWord;
             })
