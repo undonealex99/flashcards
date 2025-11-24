@@ -81,6 +81,9 @@ export const useFlashCardStore = defineStore("flashCard", () => {
         }
         answerField.value = "";
         wrongAnswers.value = 0;
+        if (array.value.length === 0) {
+            router.push("/complete");
+        }
     };
 
     const reset = (full: boolean): void => {

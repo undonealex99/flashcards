@@ -50,7 +50,6 @@ const skip = (): void => {
     }
     displayAnswer.value = false;
     inputPlaceholder.value = "";
-    store.answerField = "";
 };
 
 const lastAnswer = computed(() => store.completedArray[store.completedArray.length - 1]);
