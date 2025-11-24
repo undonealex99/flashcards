@@ -114,8 +114,8 @@ onBeforeMount(() => {
                 :wrong="0"
                 :lesson="row.lesson"
             >
-                <span v-if="store.isEnglishTheQuestion">{{ row.definition }}</span>
-                <span v-else>{{ row.term }}</span>
+                <div>{{ row.definition }}</div>
+                <div>{{ row.term }}</div>
             </FlashCardComponent>
         </div>
     </div>
