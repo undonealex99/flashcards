@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Consolas;
+    src: url(consolas.ttf);
+}
+
+html {
+    font-family: Consolas;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#app {
+    min-height: 100vh;
+}
